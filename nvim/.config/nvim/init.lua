@@ -15,5 +15,5 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 
 require("lazy").setup({
-    {import = "neo-tree"},
+    {import = "neo-tree-cfg"},
 })
