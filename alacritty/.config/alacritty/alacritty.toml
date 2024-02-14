@@ -8,6 +8,7 @@ dimensions = { columns = 160, lines = 50 }
 
 [font]
 size = 15
-normal = { family = "Mononoki Nerd Font"}
+#normal = { family = "Mononoki Nerd Font"}
+normal = { family = "FreeMono"}
 
 
