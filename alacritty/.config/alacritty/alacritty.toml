@@ -1,14 +1,18 @@
 import = [ "~/.config/alacritty/themes/themes/github_dark.toml" ]
 
 [shell]
-program = "tmux"
+program = "/usr/local/bin/tmux"
+args = ["new-session", "-A", "-s", "main"]
 
 [window]
-dimensions = { columns = 160, lines = 50 }
+dimensions = { columns = 140, lines = 50 }
 
 [font]
 size = 15
-#normal = { family = "Mononoki Nerd Font"}
-normal = { family = "FreeMono"}
-
-
+#normal = { family = "Mononoki Nerd Font Mono"}
+#normal = { family = "FreeMono"}
+#normal = { family = "FreeMono Nerd Font"}
+#normal = { family = "Lekton Nerd Font Mono" }
+#normal = { family = "LiterationMono Nerd Font" }
+#normal = { family = "JetBrainsMono Nerd Font Mono", style = "ExtraLight" }
+normal = { family = "JetBrainsMono Nerd Font Mono", style = "Thin" }
