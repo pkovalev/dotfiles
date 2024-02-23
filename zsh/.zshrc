@@ -7,6 +7,8 @@ export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 alias vi="vim"
 alias vim="nvim"
 alias new="open -n /Applications/Alacritty.app --args -e '/usr/local/bin/tmux'"
+alias ls="ls --color=auto"
+alias ll="ls -l"
 
 reset_color=$'%f'
 fg_green=$'%F{green}'
