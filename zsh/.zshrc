@@ -1,7 +1,8 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export JAVA_HOME="`/usr/libexec/java_home -v 11`"
-export PATH=$JAVA_HOME/bin:$PATH
-export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+
+if [ -f "~/.zshenv" ]; then
+  source ~/.zshenv
+fi
 
 alias vi="vim"
 alias vim="nvim"
