@@ -1,0 +1,26 @@
+set nocompatible
+
+"Set cursor for different modes
+"Ps = 0  -> blinking block.
+"Ps = 1  -> blinking block (default).
+"Ps = 2  -> steady block.
+"Ps = 3  -> blinking underline.
+"Ps = 4  -> steady underline.
+"Ps = 5  -> blinking bar (xterm).
+"Ps = 6  -> steady bar (xterm).
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+let &t_SR = "\e[4 q"
+
+
+call plug#begin()
+Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+call plug#end()
+
+"Plugin settings
+"
+"lightline
+set laststatus=2
+set noshowmode
+let g:lightline = { 'colorscheme': 'wombat' }
