@@ -1,13 +1,20 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export JAVA_HOME="`/usr/libexec/java_home -v 11`"
-export PATH=$JAVA_HOME/bin:$PATH
-export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+
+if [ -f "~/.zshenv" ]; then
+  source ~/.zshenv
+fi
 
 alias vi="vim"
 alias vim="nvim"
 alias new="open -n /Applications/Alacritty.app --args -e '/usr/local/bin/tmux'"
 alias ls="ls --color=auto"
 alias ll="ls -l"
+
+#git aliases
+alias g="git"
+alias ga="git add"
+alias gc="git commit"
+alias gb="git branch"
 
 reset_color=$'%f'
 fg_green=$'%F{green}'
@@ -21,12 +28,12 @@ function get_git_branch() {
     then
       :
     else
-      echo '%b'$fg_blue'git:('$fg_red$branch$fg_blue')%b'$reset_color''
+      echo ' %b'$fg_blue'git:('$fg_red$branch$fg_blue')%b'$reset_color''
     fi
 }
 
 
 setopt prompt_subst
-PROMPT='${fg_green}➜ ${fg_cyan}%c ${reset_color}'
+PROMPT='${fg_green}➜ ${fg_cyan}%c${reset_color}'
 PROMPT+='$(get_git_branch)'
-PROMPT+=': '
+PROMPT+=' '
