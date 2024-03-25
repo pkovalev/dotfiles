@@ -15,6 +15,9 @@ alias g="git"
 alias ga="git add"
 alias gc="git commit"
 alias gb="git branch"
+alias gf="git fetch"
+alias gp="git pull"
+alias gfp="git fetch && git pull"
 
 reset_color=$'%f'
 fg_green=$'%F{green}'
