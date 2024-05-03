@@ -32,3 +32,4 @@ set bg=dark
 "colorscheme gruvbox
 colorscheme catppuccin_frappe
 let g:lightline = { 'colorscheme': 'catppuccin_frappe' }
+set wrap
