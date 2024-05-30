@@ -17,6 +17,8 @@ require("lazy").setup({
 spec = {
         {import = "plugins/telescope"},
         {import = "plugins/treesitter"},
+        {"catppuccin/nvim", name = "catppuccin", priority = 1000}
     }
 })
 
+vim.cmd.colorscheme "catppuccin-mocha"
