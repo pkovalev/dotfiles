@@ -23,6 +23,7 @@ require("lazy").setup({
 spec = {
         {import = "plugins/telescope"},
         {import = "plugins/treesitter"},
+        {import = "plugins/lualine"},
         {"catppuccin/nvim", name = "catppuccin", priority = 1000}
     }
 })
