@@ -13,6 +13,10 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = ' '
 
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+
 require("lazy").setup({
 spec = {
         {import = "plugins/telescope"},
