@@ -35,8 +35,9 @@ function get_git_branch() {
     fi
 }
 
-
 setopt prompt_subst
 PROMPT='${fg_green}➜ ${fg_cyan}%c${reset_color}'
 PROMPT+='$(get_git_branch)'
 PROMPT+=' '
+
+source <(fzf --zsh)
