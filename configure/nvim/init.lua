@@ -11,7 +11,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-vim.g.mapleader = ' '
+vim.g.mapleader = '\\'
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -24,6 +24,7 @@ spec = {
         {import = "plugins/telescope"},
         {import = "plugins/treesitter"},
         {import = "plugins/lualine"},
+        {import = "plugins/indent-blankline"},
         {"catppuccin/nvim", name = "catppuccin", priority = 1000}
     }
 })
