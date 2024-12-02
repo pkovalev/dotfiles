@@ -40,4 +40,7 @@ PROMPT='${fg_green}➜ ${fg_cyan}%c${reset_color}'
 PROMPT+='$(get_git_branch)'
 PROMPT+=' '
 
+autoload -Uz compinit && compinit
+
 source <(fzf --zsh)
+bindkey -v
