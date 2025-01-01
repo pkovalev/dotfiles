@@ -19,6 +19,8 @@ alias gf="git fetch"
 alias gp="git pull"
 alias gfp="git fetch && git pull"
 
+git config --global alias.co checkout
+
 reset_color=$'%f'
 fg_green=$'%F{green}'
 fg_red=$'%F{red}'
