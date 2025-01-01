@@ -25,6 +25,7 @@ spec = {
         {import = "plugins/treesitter"},
         {import = "plugins/lualine"},
         {import = "plugins/indent-blankline"},
+        {import = "plugins/mason-lspconfig"},
         {"catppuccin/nvim", name = "catppuccin", priority = 1000}
     }
 })
