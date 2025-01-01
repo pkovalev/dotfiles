@@ -20,6 +20,7 @@ alias gp="git pull"
 alias gfp="git fetch && git pull"
 
 git config --global alias.co checkout
+git config --global --type bool push.autoSetupRemote true
 
 reset_color=$'%f'
 fg_green=$'%F{green}'
