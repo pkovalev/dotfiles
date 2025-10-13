@@ -39,7 +39,7 @@ function get_git_branch() {
 }
 
 setopt prompt_subst
-PROMPT='${fg_green}➜ ${fg_cyan}%c${reset_color}'
+PROMPT='${fg_blue}%m ${fg_green}➜ ${fg_cyan}%c${reset_color}'
 PROMPT+='$(get_git_branch)'
 PROMPT+=' '
 
