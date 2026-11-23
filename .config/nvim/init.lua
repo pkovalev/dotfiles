@@ -17,6 +17,15 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamed"
+vim.opt.number = true
+
+if vim.g.neovide then
+  vim.g.neovide_cursor_animation_length = 0
+  vim.g.neovide_cursor_short_animation_length = 0
+  vim.g.neovide_cursor_animate_command_line = false
+  vim.g.neovide_cursor_trail_size = 0
+end
+
 
 require("lazy").setup({
 spec = {
